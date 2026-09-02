@@ -1,6 +1,6 @@
 #Uniforme (0,14)
 a1aesperanza <- (0+14)/2
-a1avarianza <- (14-0)/12
+a1avarianza <- ((14-0)^2)/12
 
 #1b
 X_dist <- function(R){
