@@ -1,3 +1,5 @@
+set.seed(12)
+
 #Uniforme (0,14)
 a1aesperanza <- (0+14)/2
 a1avarianza <- ((14-0)^2)/12
@@ -23,7 +25,7 @@ abline(h=a1aesperanza)
 #D
 # Las otras 29 curvas
 for (j in 2:30) {
-  muchas_X <- X_dist(R)
+  muchas_X <- X_dist(10000)
   n_primeros <- numeric(R)
   for (i in 1:R) {
     n_primeros[i] <- sum(muchas_X[1:i]) / i
@@ -72,7 +74,7 @@ abline(h=esperanza_2a, col='red')
 #29 veces todo nuevo
 
 for (j in 2:30) {
-  muchas_X_n<-x_dist2a(R)
+  muchas_X_n<-x_dist2a(10000)
   promi2a29<-numeric(R)
   
   for (i in 1:R) {
