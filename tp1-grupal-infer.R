@@ -8,7 +8,7 @@ a1avarianza <- ((14-0)^2)/12
 X_dist <- function(R){
   runif(R,0,14)
 }
-R<- 10
+R<- 10000
 X_dist(R) #la devuelve por consola
 
 #1C
@@ -56,7 +56,7 @@ varianza_2a<-49
 x_dist2a <- function(R){
   rexp(R,1/7)
 }
-R<-10
+R<-10000
 x_dist2a(R)
 
 #C
